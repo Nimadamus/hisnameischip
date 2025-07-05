@@ -1,63 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>His Name is Chip</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 40px;
+      background-color: #111;
+      color: white;
+      font-family: 'Sora', sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
+
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
+      color: gold;
+      font-size: 42px;
+      margin-top: 40px;
     }
-    p.description {
-      font-size: 1.2em;
-      margin-bottom: 2em;
+
+    .hero-img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      margin: 30px auto;
+      display: block;
+    }
+
+    .about {
+      color: #ccc;
+      font-size: 18px;
       max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 30px auto;
+      line-height: 1.7;
     }
+
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
       gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
     }
+
     .gallery img {
-      width: 100%;
+      width: 230px;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-      object-fit: cover;
-      aspect-ratio: 3 / 4;
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <h1>His Name is Chip</h1>
-  <p class="description">
-    Welcome to the official fan site of Chip, the fluffiest, sassiest, and most majestic cat to ever walk the Earth. Whether he's perched on a windowsill, knocking stuff off your desk, or just giving you that look, Chip is always the center of attention.
-  </p>
+
+  <img src="chipblanket.jpg" alt="Chip in a blanket" class="hero-img" />
+
+  <div class="about">
+    Welcome to the official fan site of Chip, the fluffiest, sassiest, and most majestic cat to ever walk the Earth.
+    Whether he's perched on a windowsill, knocking stuff off your desk, or just giving you that look,
+    Chip is always the center of attention.
+  </div>
 
   <div class="gallery">
-    <img src="chip1.jpg" alt="Chip the cat 1" />
-    <img src="chip3.jpg" alt="Chip the cat 3" />
-    <img src="chip4.jpg" alt="Chip the cat 4" />
-    <img src="chip5.jpg" alt="Chip the cat 5" />
-    <img src="chip6.jpg" alt="Chip the cat 6" />
-    <img src="chip7.jpg" alt="Chip the cat 7" />
-    <img src="chip8.jpg" alt="Chip the cat 8" />
-    <img src="chip9.jpg" alt="Chip the cat 9" />
-    <img src="chip12.jpg" alt="Chip the cat 12" />
-    <img src="chip13.jpg" alt="Chip the cat 13" />
-    <img src="chip14.jpg" alt="Chip the cat 14" />
+    <img src="chip1.jpg" alt="Chip 1" />
+    <img src="chip2.jpg" alt="Chip 2" />
+    <img src="chip3.jpg" alt="Chip 3" />
+    <img src="chip4.jpg" alt="Chip 4" />
+    <img src="chip5.jpg" alt="Chip 5" />
+    <img src="chip6.jpg" alt="Chip 6" />
+    <img src="chip7.jpg" alt="Chip 7" />
+    <img src="chip8.jpg" alt="Chip 8" />
+    <img src="chip9.jpg" alt="Chip 9" />
+    <img src="chip10.jpg" alt="Chip 10" />
+    <img src="chip11.jpg" alt="Chip 11" />
+    <img src="chip12.jpg" alt="Chip 12" />
+    <img src="chip13.jpg" alt="Chip 13" />
+    <img src="chip14.jpg" alt="Chip 14" />
+    <img src="chip15.jpg" alt="Chip 15" />
+    <img src="chip16.jpg" alt="Chip 16" />
+    <img src="chip17.jpg" alt="Chip 17" />
+    <img src="chip18.jpg" alt="Chip 18" />
   </div>
 </body>
 </html>
