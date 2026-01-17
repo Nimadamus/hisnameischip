@@ -270,6 +270,381 @@
 
         footer .gold { color: var(--gold); }
 
+        /* Monetization Styles */
+        .support-section {
+            background: linear-gradient(135deg, var(--dark) 0%, #2a2a2a 100%);
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .support-section::before {
+            content: '🐱';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.05;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .support-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .support-section p {
+            color: #ccc;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .support-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .support-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .support-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .support-btn.kofi {
+            background: linear-gradient(135deg, #ff5e5b 0%, #ff8177 100%);
+            color: white;
+        }
+
+        .support-btn.paypal {
+            background: linear-gradient(135deg, #003087 0%, #009cde 100%);
+            color: white;
+        }
+
+        .support-btn.patreon {
+            background: linear-gradient(135deg, #f96854 0%, #ff424d 100%);
+            color: white;
+        }
+
+        .merch-section {
+            background: #fff;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .merch-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .merch-section > p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .merch-item {
+            background: var(--cream);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .merch-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .merch-item .icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .merch-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .merch-item p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .merch-item .price {
+            color: var(--gold);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .merch-btn {
+            display: inline-block;
+            background: var(--dark);
+            color: var(--gold);
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .merch-btn:hover {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        .products-section {
+            background: linear-gradient(135deg, #f8f4ed 0%, #fff 100%);
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            border: 2px solid var(--gold);
+        }
+
+        .products-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .products-section > p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .product-card .emoji {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h4 {
+            color: var(--dark);
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .product-card .affiliate-note {
+            font-size: 11px;
+            color: #999;
+            margin-bottom: 12px;
+        }
+
+        .product-card a {
+            display: inline-block;
+            background: #ff9900;
+            color: #111;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .product-card a:hover {
+            background: #e68a00;
+        }
+
+        .social-section {
+            background: var(--dark);
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .social-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .social-section p {
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: transform 0.3s;
+        }
+
+        .social-link:hover {
+            transform: scale(1.05);
+        }
+
+        .social-link.instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+
+        .social-link.tiktok {
+            background: #010101;
+            color: white;
+            border: 2px solid #00f2ea;
+        }
+
+        .social-link.youtube {
+            background: #ff0000;
+            color: white;
+        }
+
+        .social-link.twitter {
+            background: #000;
+            color: white;
+        }
+
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--gold) 0%, #c4a030 100%);
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .newsletter-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-section p {
+            color: var(--dark);
+            margin-bottom: 25px;
+            opacity: 0.8;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input[type="email"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+
+        .newsletter-form button {
+            background: var(--dark);
+            color: var(--gold);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #333;
+        }
+
+        .ad-banner {
+            background: linear-gradient(90deg, #1a1a1a, #2a2a2a, #1a1a1a);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .ad-banner p {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .ad-banner .ad-placeholder {
+            background: #333;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 8px;
+        }
+
         @media (max-width: 768px) {
             .hero-section { grid-template-columns: 1fr; }
             .hero-text { text-align: center; }
@@ -290,6 +665,9 @@
     <a href="#intelligence">His Intelligence</a>
     <a href="#stories">Stories</a>
     <a href="#gallery">Gallery</a>
+    <a href="#shop">Shop</a>
+    <a href="#support">Support Chip</a>
+    <a href="#follow">Follow</a>
 </nav>
 
 <main>
@@ -439,12 +817,175 @@
     <p>His name is Chip. And he is the smartest cat that ever lived.</p>
 </div>
 
+<!-- SUPPORT CHIP SECTION -->
+<section class="support-section" id="support">
+    <h2>Support Chip's Empire</h2>
+    <p>Chip requires only the finest treats, the most comfortable sleeping surfaces, and the occasional chin scratch. Your support helps maintain the lifestyle that a genius of his caliber deserves.</p>
+    <div class="support-buttons">
+        <a href="https://ko-fi.com/hisnameischip" class="support-btn kofi" target="_blank">
+            <span>☕</span> Buy Chip a Treat
+        </a>
+        <a href="https://www.paypal.com/paypalme/hisnameischip" class="support-btn paypal" target="_blank">
+            <span>💳</span> PayPal Donation
+        </a>
+        <a href="https://www.patreon.com/hisnameischip" class="support-btn patreon" target="_blank">
+            <span>🎁</span> Become a Patron
+        </a>
+    </div>
+</section>
+
+<!-- MERCH SECTION -->
+<section class="merch-section" id="shop">
+    <h2>Official Chip Merchandise</h2>
+    <p>Wear your allegiance to the smartest cat that ever lived</p>
+    <div class="merch-grid">
+        <div class="merch-item">
+            <div class="icon">👕</div>
+            <h3>"His Name Is Chip" T-Shirt</h3>
+            <p>Premium cotton tee featuring Chip's majestic portrait</p>
+            <div class="price">$24.99</div>
+            <a href="https://www.redbubble.com/shop/hisnameischip" class="merch-btn" target="_blank">Shop Now</a>
+        </div>
+        <div class="merch-item">
+            <div class="icon">☕</div>
+            <h3>Genius Cat Mug</h3>
+            <p>"Some cats chase lasers. Chip knows better."</p>
+            <div class="price">$16.99</div>
+            <a href="https://www.redbubble.com/shop/hisnameischip" class="merch-btn" target="_blank">Shop Now</a>
+        </div>
+        <div class="merch-item">
+            <div class="icon">📅</div>
+            <h3>2026 Chip Calendar</h3>
+            <p>12 months of Chip's wisdom and majesty</p>
+            <div class="price">$19.99</div>
+            <a href="https://www.redbubble.com/shop/hisnameischip" class="merch-btn" target="_blank">Shop Now</a>
+        </div>
+        <div class="merch-item">
+            <div class="icon">🧢</div>
+            <h3>Chip Dad Hat</h3>
+            <p>Embroidered "CHIP" on premium dad cap</p>
+            <div class="price">$22.99</div>
+            <a href="https://www.redbubble.com/shop/hisnameischip" class="merch-btn" target="_blank">Shop Now</a>
+        </div>
+        <div class="merch-item">
+            <div class="icon">🖼️</div>
+            <h3>Chip Portrait Print</h3>
+            <p>Museum-quality art print of His Majesty</p>
+            <div class="price">$29.99</div>
+            <a href="https://www.redbubble.com/shop/hisnameischip" class="merch-btn" target="_blank">Shop Now</a>
+        </div>
+        <div class="merch-item">
+            <div class="icon">📱</div>
+            <h3>Chip Phone Case</h3>
+            <p>Protect your phone with genius energy</p>
+            <div class="price">$18.99</div>
+            <a href="https://www.redbubble.com/shop/hisnameischip" class="merch-btn" target="_blank">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- CHIP'S FAVORITE PRODUCTS (AFFILIATE) -->
+<section class="products-section">
+    <h2>Chip's Approved Products</h2>
+    <p>The products Chip personally endorses (because he uses them and they meet his exacting standards)</p>
+    <div class="products-grid">
+        <div class="product-card">
+            <div class="emoji">🍗</div>
+            <h4>Temptations Cat Treats</h4>
+            <p class="affiliate-note">Chip's treat of choice</p>
+            <a href="https://www.amazon.com/dp/B00CK96EXC?tag=hisnameischip-20" target="_blank">View on Amazon</a>
+        </div>
+        <div class="product-card">
+            <div class="emoji">🛏️</div>
+            <h4>Heated Cat Bed</h4>
+            <p class="affiliate-note">For genius-level naps</p>
+            <a href="https://www.amazon.com/dp/B07GQGB4R9?tag=hisnameischip-20" target="_blank">View on Amazon</a>
+        </div>
+        <div class="product-card">
+            <div class="emoji">⛲</div>
+            <h4>Cat Water Fountain</h4>
+            <p class="affiliate-note">Chip demands fresh water</p>
+            <a href="https://www.amazon.com/dp/B0B1GRQVV4?tag=hisnameischip-20" target="_blank">View on Amazon</a>
+        </div>
+        <div class="product-card">
+            <div class="emoji">🏔️</div>
+            <h4>Cat Tree Tower</h4>
+            <p class="affiliate-note">Observation post for thinking</p>
+            <a href="https://www.amazon.com/dp/B0CVPXQX45?tag=hisnameischip-20" target="_blank">View on Amazon</a>
+        </div>
+        <div class="product-card">
+            <div class="emoji">🪥</div>
+            <h4>Self-Grooming Brush</h4>
+            <p class="affiliate-note">Maintains the majestic coat</p>
+            <a href="https://www.amazon.com/dp/B09ZYCM9DK?tag=hisnameischip-20" target="_blank">View on Amazon</a>
+        </div>
+        <div class="product-card">
+            <div class="emoji">🐟</div>
+            <h4>Fancy Feast Gourmet</h4>
+            <p class="affiliate-note">Chip's gourmet selection</p>
+            <a href="https://www.amazon.com/dp/B001VJ0B0I?tag=hisnameischip-20" target="_blank">View on Amazon</a>
+        </div>
+    </div>
+    <p style="text-align: center; margin-top: 30px; color: #999; font-size: 12px;">As an Amazon Associate, we earn from qualifying purchases. Chip thanks you for your support.</p>
+</section>
+
+<!-- AD BANNER PLACEHOLDER -->
+<div class="ad-banner">
+    <p>Advertisement</p>
+    <div class="ad-placeholder">Google AdSense Banner (728x90)</div>
+</div>
+
+<!-- SOCIAL MEDIA SECTION -->
+<section class="social-section" id="follow">
+    <h2>Follow Chip's Journey</h2>
+    <p>Stay updated on Chip's latest observations, philosophical musings, and treat acquisitions</p>
+    <div class="social-links">
+        <a href="https://instagram.com/hisnameischip" class="social-link instagram" target="_blank">
+            <span>📸</span> Instagram
+        </a>
+        <a href="https://tiktok.com/@hisnameischip" class="social-link tiktok" target="_blank">
+            <span>🎵</span> TikTok
+        </a>
+        <a href="https://youtube.com/@hisnameischip" class="social-link youtube" target="_blank">
+            <span>▶️</span> YouTube
+        </a>
+        <a href="https://x.com/hisnameischip" class="social-link twitter" target="_blank">
+            <span>𝕏</span> X (Twitter)
+        </a>
+    </div>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter-section">
+    <h2>Join The Inner Circle</h2>
+    <p>Get exclusive Chip content, wisdom dispatches, and early access to new merchandise</p>
+    <form class="newsletter-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<!-- ANOTHER AD BANNER -->
+<div class="ad-banner">
+    <p>Advertisement</p>
+    <div class="ad-placeholder">Google AdSense Banner (728x90)</div>
+</div>
+
 </main>
 
 <footer>
     <p class="gold">HIS NAME IS CHIP</p>
     <p>The Smartest Cat That Ever Lived</p>
-    <p style="margin-top: 20px; font-size: 13px;">A monument to feline excellence | hisnameischip.com</p>
+    <div style="margin: 25px 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <a href="#shop" style="color: var(--gold); text-decoration: none;">Shop</a>
+        <a href="https://ko-fi.com/hisnameischip" style="color: var(--gold); text-decoration: none;" target="_blank">Support</a>
+        <a href="https://instagram.com/hisnameischip" style="color: var(--gold); text-decoration: none;" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/@hisnameischip" style="color: var(--gold); text-decoration: none;" target="_blank">TikTok</a>
+        <a href="mailto:contact@hisnameischip.com" style="color: var(--gold); text-decoration: none;">Contact</a>
+    </div>
+    <p style="font-size: 13px;">A monument to feline excellence | hisnameischip.com</p>
+    <p style="margin-top: 15px; font-size: 11px; color: #666;">Amazon links are affiliate links. We may earn a commission from qualifying purchases.</p>
+    <p style="font-size: 11px; color: #555;">© 2026 His Name Is Chip. All rights reserved.</p>
 </footer>
 
 </body>
