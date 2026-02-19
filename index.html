@@ -270,6 +270,62 @@
             border-top: 3px solid var(--gold);
         }
 
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .social-card {
+            display: block;
+            background: var(--dark);
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .social-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        .social-youtube:hover { border-color: #ff0000; }
+        .social-tiktok:hover { border-color: #00f2ea; }
+        .social-instagram:hover { border-color: #e1306c; }
+
+        .social-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .social-youtube .social-icon { color: #ff0000; }
+        .social-tiktok .social-icon { color: #00f2ea; }
+        .social-instagram .social-icon { color: #e1306c; }
+
+        .social-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .social-handle {
+            color: var(--gold);
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .social-card p {
+            color: #999;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
         footer p { margin-bottom: 10px; }
 
         footer .gold { color: var(--gold); }
@@ -294,6 +350,7 @@
     <a href="#intelligence">His Intelligence</a>
     <a href="#stories">Stories</a>
     <a href="#gallery">Gallery</a>
+    <a href="#watch">Watch Chip</a>
 </nav>
 
 <main>
@@ -444,11 +501,46 @@
 </div>
 
 
+<h2 class="section-title" id="watch">Watch <span>Chip</span></h2>
+
+<div class="social-grid">
+    <a href="https://www.youtube.com/@ChipDimwitty" target="_blank" class="social-card social-youtube">
+        <div class="social-icon">&#9654;</div>
+        <h3>YouTube</h3>
+        <p class="social-handle">@ChipDimwitty</p>
+        <p>Full-length documentation of Chip's intellectual supremacy. Subscribe or he'll know.</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@hisnameischip" target="_blank" class="social-card social-tiktok">
+        <div class="social-icon">&#9835;</div>
+        <h3>TikTok</h3>
+        <p class="social-handle">@hisnameischip</p>
+        <p>Bite-sized genius. 60 seconds is all Chip needs to prove he's smarter than you.</p>
+    </a>
+
+    <a href="https://www.instagram.com/chipthegreat2016" target="_blank" class="social-card social-instagram">
+        <div class="social-icon">&#9679;</div>
+        <h3>Instagram</h3>
+        <p class="social-handle">@chipthegreat2016</p>
+        <p>Curated portraits and reels of the most photogenic intellect on four legs.</p>
+    </a>
+</div>
+
+<div class="quote-box">
+    <p>Other cats have followers. Chip has disciples.</p>
+    <div class="attribution">- Digital Truth</div>
+</div>
+
 </main>
 
 <footer>
     <p class="gold">HIS NAME IS CHIP</p>
     <p>The Smartest Cat That Ever Lived</p>
+    <div style="margin: 20px 0; display: flex; justify-content: center; gap: 30px;">
+        <a href="https://www.youtube.com/@ChipDimwitty" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 14px; letter-spacing: 1px;">YouTube</a>
+        <a href="https://www.tiktok.com/@hisnameischip" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 14px; letter-spacing: 1px;">TikTok</a>
+        <a href="https://www.instagram.com/chipthegreat2016" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 14px; letter-spacing: 1px;">Instagram</a>
+    </div>
     <p style="font-size: 13px; margin-top: 20px;">A monument to feline excellence | hisnameischip.com</p>
     <p style="font-size: 11px; color: #555; margin-top: 15px;">© 2026 His Name Is Chip. All rights reserved.</p>
 </footer>
