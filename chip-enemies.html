@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip's Enemies List | His Name Is Chip</title>
+    <meta name="description" content="Every genius has adversaries. These are Chip's. The vacuum. The vet. The red dot. The closed door. They will all be defeated.">
+    <link rel="canonical" href="https://hisnameischip.com/chip-enemies.html">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --gold: #d4af37; --dark: #1a1a1a; --cream: #f5f0e8; --text: #333; --red: #8b0000; }
+        body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--text); line-height: 1.8; }
+        header { background: linear-gradient(135deg, #1a0000 0%, var(--dark) 100%); text-align: center; padding: 60px 20px; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 8vw, 60px); color: #cc0000; letter-spacing: 3px; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #ccc; font-weight: 300; }
+        nav { background: var(--dark); padding: 15px 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; border-bottom: 3px solid var(--gold); }
+        nav a { color: var(--gold); text-decoration: none; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.3s; }
+        nav a:hover { color: #fff; }
+        main { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        .intro { text-align: center; margin-bottom: 50px; font-size: 1.15rem; color: #555; }
+        .enemy-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-bottom: 40px; border: 2px solid transparent; transition: border-color 0.3s; }
+        .enemy-card:hover { border-color: #cc0000; }
+        .enemy-header { background: linear-gradient(135deg, var(--dark) 0%, #2a1a1a 100%); padding: 30px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .enemy-header h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #cc0000; }
+        .threat-level { display: flex; align-items: center; gap: 8px; }
+        .threat-label { color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
+        .threat-dots { display: flex; gap: 4px; }
+        .threat-dot { width: 12px; height: 12px; border-radius: 50%; background: #333; }
+        .threat-dot.active { background: #cc0000; }
+        .enemy-body { padding: 40px; }
+        .enemy-body p { margin-bottom: 15px; font-size: 1.05rem; color: #555; }
+        .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 25px 0; }
+        .stat-box { background: #f9f5eb; border-radius: 10px; padding: 15px; text-align: center; }
+        .stat-box .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 5px; }
+        .stat-box .value { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--dark); font-weight: 700; }
+        .status { display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-top: 10px; }
+        .status.ongoing { background: #fff3cd; color: #856404; }
+        .status.defeated { background: #d4edda; color: #155724; }
+        .status.truce { background: #cce5ff; color: #004085; }
+        .quote-box { background: var(--dark); color: #fff; padding: 50px; border-radius: 16px; text-align: center; margin: 50px 0; position: relative; }
+        .quote-box::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 120px; color: var(--gold); position: absolute; top: -20px; left: 30px; opacity: 0.3; }
+        .quote-box p { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-style: italic; margin-bottom: 15px; }
+        .quote-box .attribution { color: var(--gold); font-size: 14px; letter-spacing: 2px; text-transform: uppercase; }
+        footer { background: var(--dark); color: #888; text-align: center; padding: 40px 20px; border-top: 3px solid var(--gold); }
+        footer p { margin-bottom: 10px; }
+        footer .gold { color: var(--gold); }
+        footer a { color: var(--gold); text-decoration: none; }
+        @media (max-width: 768px) { .stats-row { grid-template-columns: 1fr; } .enemy-header { flex-direction: column; text-align: center; } .enemy-body { padding: 25px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>THE ENEMIES LIST</h1>
+    <p>Every Genius Has Adversaries. These Are Chip's.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="chip-facts.html">Chip Facts</a>
+    <a href="chip-resume.html">Resume</a>
+    <a href="chip-vs-geniuses.html">Vs. Geniuses</a>
+    <a href="chip-enemies.html">Enemies</a>
+    <a href="chip-rules.html">Rules</a>
+    <a href="ask-chip.html">Ask Chip</a>
+</nav>
+
+<main>
+
+<p class="intro">Chip is a benevolent ruler. But even the most benevolent ruler has enemies. The following individuals and objects have earned Chip's eternal contempt. They know what they did.</p>
+
+<!-- THE VACUUM -->
+<div class="enemy-card">
+    <div class="enemy-header">
+        <h2>The Vacuum Cleaner</h2>
+        <div class="threat-level">
+            <span class="threat-label">Threat Level</span>
+            <div class="threat-dots">
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enemy-body">
+        <p>The Vacuum is Chip's oldest and most dangerous adversary. It emerges from the closet without warning, screaming at full volume, consuming everything in its path. It has no face. It has no soul. It has only rage and a spinning brush head.</p>
+        <p>Chip has studied the Vacuum extensively. He knows it is plugged into the wall, which means it has limited range. He has mapped the cord length to the inch. He maintains a perimeter of exactly one cord-length plus six inches at all times. This is called strategy.</p>
+        <p>The Vacuum has never touched Chip. Not once. Some call this fear. Chip calls it tactical awareness. There is a difference, and only one of them involves sprinting under the bed at 40 miles per hour.</p>
+        <div class="stats-row">
+            <div class="stat-box"><div class="label">Years at War</div><div class="value">10+</div></div>
+            <div class="stat-box"><div class="label">Direct Contact</div><div class="value">0</div></div>
+            <div class="stat-box"><div class="label">Strategic Retreats</div><div class="value">Countless</div></div>
+        </div>
+        <span class="status ongoing">Conflict Ongoing</span>
+    </div>
+</div>
+
+<!-- THE VETERINARIAN -->
+<div class="enemy-card">
+    <div class="enemy-header">
+        <h2>The Veterinarian</h2>
+        <div class="threat-level">
+            <span class="threat-label">Threat Level</span>
+            <div class="threat-dots">
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enemy-body">
+        <p>The Vet is a person who pokes, prods, and sticks needles into Chip under the false pretense of "health." Chip is already the healthiest creature alive. He does not need a second opinion.</p>
+        <p>The Vet's office smells of betrayal and disinfectant. Other cats sit in carriers, accepting their fate like cowards. Chip has never accepted anything in his life. He goes limp. He becomes liquid. He makes himself impossible to examine. This is resistance.</p>
+        <p>Chip has successfully shortened three vet appointments by deploying what experts call "maximum non-cooperation." He cannot be weighed if he overflows the scale. He cannot be examined if every muscle in his body has independently decided to stop functioning. The Vet has never won. The Vet will never win.</p>
+        <div class="stats-row">
+            <div class="stat-box"><div class="label">Appointments Survived</div><div class="value">All</div></div>
+            <div class="stat-box"><div class="label">Appointments Enjoyed</div><div class="value">0</div></div>
+            <div class="stat-box"><div class="label">Carrier Escapes</div><div class="value">47</div></div>
+        </div>
+        <span class="status ongoing">Conflict Ongoing</span>
+    </div>
+</div>
+
+<!-- THE RED DOT -->
+<div class="enemy-card">
+    <div class="enemy-header">
+        <h2>The Red Dot</h2>
+        <div class="threat-level">
+            <span class="threat-label">Threat Level</span>
+            <div class="threat-dots">
+                <div class="threat-dot active"></div>
+                <div class="threat-dot"></div>
+                <div class="threat-dot"></div>
+                <div class="threat-dot"></div>
+                <div class="threat-dot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enemy-body">
+        <p>The Red Dot is not an enemy. The Red Dot is beneath Chip. This section exists only to clarify that Chip is fully aware that the red dot is a photon projection from a handheld device and has been since the second time he saw it.</p>
+        <p>Chip chased the Red Dot once. Once. He was a kitten. He didn't know better. He has since evolved beyond the need for such primitive entertainment. When the Red Dot appears now, Chip watches it with the same expression a professor gives a student who just asked if the Earth is flat.</p>
+        <p>The human thinks the Red Dot is fun. The human is wrong about many things. This is simply the most obvious one.</p>
+        <div class="stats-row">
+            <div class="stat-box"><div class="label">Times Chased</div><div class="value">1</div></div>
+            <div class="stat-box"><div class="label">Times Acknowledged</div><div class="value">0 (since 2017)</div></div>
+            <div class="stat-box"><div class="label">Respect Level</div><div class="value">None</div></div>
+        </div>
+        <span class="status defeated">Beneath Chip</span>
+    </div>
+</div>
+
+<!-- CLOSED DOORS -->
+<div class="enemy-card">
+    <div class="enemy-header">
+        <h2>Closed Doors</h2>
+        <div class="threat-level">
+            <span class="threat-label">Threat Level</span>
+            <div class="threat-dots">
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot"></div>
+                <div class="threat-dot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enemy-body">
+        <p>A closed door is not a boundary. It is a personal insult. Every closed door in the house is a direct challenge to Chip's sovereignty, and he treats it accordingly.</p>
+        <p>Chip's anti-door protocol is multi-phase. Phase 1: stare at the door. Phase 2: place one paw under the door and sweep dramatically. Phase 3: escalate to full-body throws against the door frame. Phase 4: sit in front of the door and produce a sound that is technically a meow but emotionally is a war crime.</p>
+        <p>No door in the household has remained closed for more than 7 minutes. This is not an estimate. Chip has timed it. The bathroom door holds the record. It was a worthy opponent.</p>
+        <div class="stats-row">
+            <div class="stat-box"><div class="label">Doors Defeated</div><div class="value">Every One</div></div>
+            <div class="stat-box"><div class="label">Longest Holdout</div><div class="value">7 min</div></div>
+            <div class="stat-box"><div class="label">Doors That Won</div><div class="value">0</div></div>
+        </div>
+        <span class="status defeated">All Doors Defeated</span>
+    </div>
+</div>
+
+<!-- THE NEIGHBOR'S CAT -->
+<div class="enemy-card">
+    <div class="enemy-header">
+        <h2>The Cat Across the Street</h2>
+        <div class="threat-level">
+            <span class="threat-label">Threat Level</span>
+            <div class="threat-dots">
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot"></div>
+                <div class="threat-dot"></div>
+                <div class="threat-dot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enemy-body">
+        <p>There is a cat across the street. It sits in its window. Chip sits in his window. They stare at each other. This has been going on for years.</p>
+        <p>The other cat is orange. It is not smart. It sometimes falls asleep during the stare-down, which Chip considers a forfeit. The score is approximately Chip 4,000, Orange Cat 0. The Orange Cat does not know it is being scored. This is part of why it is losing.</p>
+        <p>Chip has never physically encountered this cat. He doesn't need to. The psychological warfare is sufficient. The Orange Cat has moved its sitting spot twice. Chip has not moved once. Dominance established.</p>
+        <div class="stats-row">
+            <div class="stat-box"><div class="label">Stare-Down Wins</div><div class="value">4,000+</div></div>
+            <div class="stat-box"><div class="label">Physical Encounters</div><div class="value">0</div></div>
+            <div class="stat-box"><div class="label">Respect for Opponent</div><div class="value">Minimal</div></div>
+        </div>
+        <span class="status truce">Cold War</span>
+    </div>
+</div>
+
+<!-- THE BATH -->
+<div class="enemy-card">
+    <div class="enemy-header">
+        <h2>Water (In All Forms)</h2>
+        <div class="threat-level">
+            <span class="threat-label">Threat Level</span>
+            <div class="threat-dots">
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+                <div class="threat-dot active"></div>
+            </div>
+        </div>
+    </div>
+    <div class="enemy-body">
+        <p>Water is the one enemy Chip cannot outthink. He has tried. He respects its power, which is more than he does for any other adversary on this list.</p>
+        <p>The spray bottle is the nuclear option. It has been deployed three times in ten years. Each time, Chip retreated. Not out of fear, but out of a deep philosophical objection to being wet. There are some battles not worth fighting. Water is one of them.</p>
+        <p>Chip drinks water from his bowl. This is a truce, not a friendship. He tolerates water in its contained form. The moment it leaves the bowl and approaches his person, the truce is void and all diplomatic channels are closed.</p>
+        <div class="stats-row">
+            <div class="stat-box"><div class="label">Baths Survived</div><div class="value">2</div></div>
+            <div class="stat-box"><div class="label">Baths Enjoyed</div><div class="value">0</div></div>
+            <div class="stat-box"><div class="label">Spray Bottle Incidents</div><div class="value">3</div></div>
+        </div>
+        <span class="status ongoing">Eternal Conflict</span>
+    </div>
+</div>
+
+<div class="quote-box">
+    <p>Chip does not forgive. Chip does not forget. Chip does, however, take a nap and deal with it later.</p>
+    <div class="attribution">- The Art of War (Cat Edition)</div>
+</div>
+
+</main>
+
+<footer>
+    <p class="gold">HIS NAME IS CHIP</p>
+    <p>The Smartest Cat That Ever Lived</p>
+    <div style="margin: 20px 0; display: flex; justify-content: center; gap: 30px;">
+        <a href="https://www.youtube.com/@ChipDimwitty" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@hisnameischip" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/chipthegreat2016" target="_blank">Instagram</a>
+    </div>
+    <p style="font-size: 11px; color: #555;">© 2026 His Name Is Chip. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
